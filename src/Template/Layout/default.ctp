@@ -52,7 +52,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
-        <center> My FOOTER</center>
+         My FOOTER
     </footer>
 </body>
 </html>

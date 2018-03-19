@@ -319,11 +319,11 @@ pre {
 }
 
 .top-bar.expanded .title-area {
-    background: #01545b;
+    background: #8A2BE2;
 }
 
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #116d76;
+    background: #8A2BE2;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -373,9 +373,9 @@ table thead tr {
 table tr th {
     padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
-    color: #1798A5;
+    color:  #DC143C;
     text-align: left;
-    border-bottom: 2px solid #1798A5;
+    border-bottom: 2px solid    #DC143C;
 }
 
 table tr:nth-of-type(even) {
@@ -499,20 +499,20 @@ div.message.hidden {
 }
 
 .content h3 {
-    color: #be140b;
+    color:  #DC143C;
     padding-bottom: 0.5rem;
     margin-bottom: 20px;
 }
 
 .content h4 {
-    color: #be140b;
+    color: #DC143C;
     padding-bottom: 0.5rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid #be140b;
+    border-bottom: 2px solid #DC143C;
 }
 
 .content .related h4 {
-    color: #4d8f97;
+    color:  #DC143C;
     padding-bottom: 0.5rem;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -522,4 +522,10 @@ div.message.hidden {
 table td {
     vertical-align: top;
     word-break: break-all;
+}
+
+footer{
+    background-color: #8A2BE2;
+    color: white;
+    text-align: center;
 }
