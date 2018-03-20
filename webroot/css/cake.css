@@ -8,15 +8,15 @@ a:hover {
 }
 
 a {
-    color: #1798A5;
+    color: #FF69B4;
 }
 
 .side-nav li a:not(.button) {
-    color: #15848F;
+    color:  #FF69B4;
 }
 
 .side-nav li a:not(.button):hover {
-    color: #15848F;
+    color:  #FF69B4;
 }
 
 header {
@@ -319,20 +319,20 @@ pre {
 }
 
 .top-bar.expanded .title-area {
-    background: #8A2BE2;
+    background: #FF69B4;
 }
 
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #8A2BE2;
+    background: #FF69B4;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #308e97;
+    background-color: #FF69B4;
     background: #308e97;
 }
 
 .side-nav li.heading {
-    color: #1798A5;
+    color:  #FF69B4;
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -340,7 +340,7 @@ pre {
 }
 
 #actions-sidebar {
-    background: #fafafa;
+    background:     #FFf;
 }
 
 .index table {
@@ -375,7 +375,7 @@ table tr th {
     font-size: 0.875rem;
     color:  #DC143C;
     text-align: left;
-    border-bottom: 2px solid    #DC143C;
+    border-bottom: 2px solid #DC143C;
 }
 
 table tr:nth-of-type(even) {
@@ -525,7 +525,8 @@ table td {
 }
 
 footer{
-    background-color: #8A2BE2;
+    background-color: #FF69B4;
     color: white;
     text-align: center;
+    padding: 5px;
 }

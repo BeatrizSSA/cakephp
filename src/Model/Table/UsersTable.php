@@ -73,7 +73,8 @@ class UsersTable extends Table
             ->scalar('role')
             ->maxLength('role', 20)
             ->requirePresence('role', 'create')
-            ->notEmpty('role');
+            ->notEmpty('role')
+            ->add('role', 'inList', ['rule' => ['inList', ['admin', 'author']],'message' => 'Por favor entre com um papel válido!']);
 
         return $validator;
     }
@@ -85,8 +86,7 @@ class UsersTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    public function buildRules(RulesChecker $rules)
-    {
+    public function buildRules(RulesChecker $rules) {
         $rules->add($rules->isUnique(['username']));
 
         return $rules;

@@ -2,6 +2,9 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Event\Event;
+use Cake\Auth\DefaultPasswordHasher;
+
 
 /**
  * User Entity
@@ -13,8 +16,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  */
-class User extends Entity
-{
+class User extends Entity {
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -41,4 +43,9 @@ class User extends Entity
     protected $_hidden = [
         'password'
     ];
+
+    protected function _setPassword($password) {
+        return (new DefaultPasswordHasher)->hash($password);
+    }
+
 }
